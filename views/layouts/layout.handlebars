@@ -17,28 +17,15 @@
         
         <h1 class="text-left">Nash Equillibrium Shove/Call</h1>
         
-        <div><h4><p>To purchase 1 Query for 1 Eth:</p></h4>
-            <p>1) Save the validation code</p>
-            <p>2) Send 1 eth to the address below</p>
-            <p>3) Enter the confirmed txid and your validation code to recieve your request</p>
-           </div>
-           <div>
-            <label>Send 1 Eth to this address:</label>
-            </div>
-            <div>
-            <img src="bitcoin.JPG">
-            </div>
-         <div>
-        <h4>Validation code: <span class="label label-success">asdjkfhklsjdhfkljhasdkfhskdjlfh</span></h4>
-
-
+        <div><h3><p>To purchase 1 Query for 1 Eth: </p></h3>
+        <h4><p>1) Send a transaction to this address: 0x627306090abaB3A6e1400e9345bC60c78a8BEf57</p></h4>
+<!--
       <button class="get">Get Challenge</button>
-      <button class="verify">Verify Signature</button>
-
-      <pre class="challenge"></pre>
-      <pre class="signature"></pre>
+    --> 
 
    
+
+   <!--
         <div>
             
          <form>
@@ -54,7 +41,7 @@
     
        </form>
         </div> 
-       
+      
     
         <div class="row">
             <div class="col-sm-4">
@@ -67,9 +54,32 @@
                 <h3></h3>
             </div>
         </div>   
-<div> 
-          <button type="submit" name="load_data" id="load_data" class="btn btn-primary btn-lg">Calculate</button>
+         -->
+        <h4><p>2) Log into metamask.</p></h4>
+         <h4><p>3) Click "Get Challenge" to recieve your signature request (you must sign with the same address you made your transaction with!).</p></h4>
+          <h4><p>4) Sign the challenge when metamask pops up.</p></h4>
+          <h4><p>5) Click Load Data to recieve your solutions. </p></h4>
+      <pre class="challenge"></pre>
+      <pre class="signature"></pre>
+        <div> 
+          <button type="submit" name="load_data" id="load_data" class="btn btn-primary btn-lg">Get Challenge</button>
         </div>
+  <div class="row">
+            <div class="col-sm-4">
+                <h3></h3>
+            </div>
+            <div class="col-sm-4">
+                <h3></h3>
+            </div>
+            <div class="col-sm-4">
+                <h3></h3>
+            </div>
+        </div>   
+        <div> 
+          <button type="submit" name="verify" id="verify" class="btn btn-primary btn-lg">Load Data</button>
+        </div>
+
+         
          
     <div class="row"> 
         <form method="post" action="/calculate">
@@ -222,7 +232,7 @@ console.log('clicked');
       });
     });
   });
-  $('.verify').on('click', function() {
+  $('.#verify').on('click', function() {
       var antes = $('#formSelectorantes').val();
       var position = $('#formSelectorposition').val();
       var effectiveBbs = $('#formSelectoreffectiveBbs').val();
