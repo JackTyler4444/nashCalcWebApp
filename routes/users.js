@@ -78,6 +78,7 @@ for (var i=0 ; i < bodyTemp.result.length ; i++)
           res.send(table_output_data);
           
           console.log('done render');
+          break;
     }
     //console.log('Didnt match.  Trying again');
 } 
