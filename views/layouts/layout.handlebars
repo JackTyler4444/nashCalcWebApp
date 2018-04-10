@@ -194,7 +194,7 @@ console.log('clicked');
       //var data = {test:'data'};
     
 
-    $.get('https://nashcalcwebappthree.herokuapp.com/auth/' + web3.eth.accounts[0], (res) => {
+    $.get('https://nashcalcwebappthree.herokuapp.com:3001/auth/' + web3.eth.accounts[0], (res) => {
       challenge = res
       console.log(res)
       res.forEach(line => {
@@ -228,7 +228,7 @@ console.log('clicked');
       var effectiveBbs = $('#formSelectoreffectiveBbs').val();
       var icmCev = $('#formSelectoricmCev').val();
 
-    $.get('https://nashcalcwebappthree.herokuapp.com/auth/' + challenge[1].value + '/' + signature + '/' + antes + '/' + position + '/' + effectiveBbs + '/' + icmCev, (res) => {
+    $.get('https://nashcalcwebappthree.herokuapp.com:3001/auth/' + challenge[1].value + '/' + signature + '/' + antes + '/' + position + '/' + effectiveBbs + '/' + icmCev, (res) => {
      
 document.getElementById("output_table_div").innerHTML += res;
 /*
